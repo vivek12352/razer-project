@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #000;
+
+        }
+
+        nav ul {
+            margin: auto;
+            justify-content: center;
+            display: flex;
+            width: 75vw;
+        }
+
+        li a {
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 36px;
+            cursor: pointer;
+            color: rgba(238, 231, 231, 0.753);
+
+        }
+
+        li a:hover {
+            color: rgb(255, 255, 255);
+
+        }
+
+        ul img {
+            justify-content: center;
+            list-style: none;
+            padding: 25px;
+            cursor: pointer;
+        }
+
+        .sepration {
+            height: 5px;
+            width: auto;
+            background-color: greenyellow;
+        }
+
+        .sepration2 {
+
+            height: 5px;
+            width: auto;
+            background-color: rgba(178, 180, 175, 0.61);
+        }
+
+        .box {
+            text-align: center;
+            align-items: center;
+            place-content: center;
+            display: flex;
+            width: 100%;
+            background-color: gray;
+            height: 37px;
+            margin: auto;
+            color: white;
+        }
+
+        .first {
+
+            background-size: max(1000px, 100vw);
+            height: 80vh;
+            position: relative;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-image: url(assests/razer-mid-year-gear-up-primeday-homepage-desktop2x.webp);
+
+
+
+
+
+
+        }
+
+        .second {
+            background-size: max(1000px, 100vw);
+            height: 80vh;
+            position: relative;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-image: url(assests/razer-back-to-school-2024-homepage-desktop2x.webp);
+        }
+
+        .third {
+            background-size: max(1000px, 100vw);
+            height: 80vh;
+            position: relative;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-image: url(assests/razer-blade-18-2024-homepage-desktop2x.webp);
+        }
+
+        .omg {
+            margin: 10px
+        }
+
+        .omg h2 {
+            TEXT-ALIGN: center;
+            font-weight: bold;
+            font-size: 50px;
+
+            font-family: Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "apple color emoji", "segoe ui emoji", "Segoe UI Symbol", "noto color emoji";
+            position: relative;
+            color: white;
+            justify-content: center;
+            display: flex;
+        }
+
+        .omg h3 {
+
+            TEXT-ALIGN: center;
+            font-size: 25px;
+            font-weight: 400;
+            top: 1vh;
+            font-family: Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "apple color emoji", "segoe ui emoji", "Segoe UI Symbol", "noto color emoji";
+            position: relative;
+            color: white;
+            justify-content: center;
+            display: flex;
+        }
+
+        .omg a {
+            TEXT-ALIGN: center;
+            font-family: Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "apple color emoji", "segoe ui emoji", "Segoe UI Symbol", "noto color emoji";
+            font-weight: 300;
+            font-size: 21px;
+            top: 1vh;
+            list-style: none;
+            position: relative;
+            color: white;
+            justify-content: center;
+            display: flex;
+        }
+
+        .omg2 {
+            margin: 20px;
+        }
+
+        .omg2 h2 {
+            TEXT-ALIGN: center;
+            font-weight: bold;
+            font-size: 50px;
+
+            font-family: Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "apple color emoji", "segoe ui emoji", "Segoe UI Symbol", "noto color emoji";
+            position: relative;
+            color: white;
+            justify-content: center;
+            display: flex;
+        }
+
+        .omg2 h3 {
+
+            TEXT-ALIGN: center;
+            font-size: 25px;
+            font-weight: 400;
+            top: 1vh;
+            font-family: Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "apple color emoji", "segoe ui emoji", "Segoe UI Symbol", "noto color emoji";
+            position: relative;
+            color: white;
+            justify-content: center;
+            display: flex;
+        }
+
+        .omg2 a {
+            TEXT-ALIGN: center;
+            font-family: Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "apple color emoji", "segoe ui emoji", "Segoe UI Symbol", "noto color emoji";
+            font-weight: 300;
+            font-size: 21px;
+            top: 1vh;
+            list-style: none;
+            position: relative;
+            color: white;
+            justify-content: center;
+            display: flex;
+        }
+
+        .grid {
+            margin: 0;
+            /* height: 77vh; */
+            grid-template-columns: 1fr 1fr;
+            display: grid;
+            border: 2px solid rgba(128, 128, 128, 0.418);
+        }
+
+        .box1 {
+            position: relative;
+            margin: 0;
+            border: 5px solid rgba(178, 180, 175, 0.61);
+            height: 80vh;
+            background-image: url(assests/esports-campaign-2024-b-950x580-desktop.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .box2 {
+            border: 5px solid rgba(178, 180, 175, 0.61);
+            height: 80vh;
+            background-image: url(assests/nvidia-game-bundle-black-myth-wukong-b-950x580-desktop.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .box3 {
+            border: 5px solid rgba(178, 180, 175, 0.61);
+            height: 80vh;
+            background-image: url(assests/razerstore-rewards-signup-chairs-promo-b-950x580-desktop.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .box4 {
+            border: 5px solid rgba(178, 180, 175, 0.61);
+            height: 80vh;
+            background-image: url(assests/razer-blade-14-b-950x580-desktop.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .botm {
+
+            display: grid;
+            color: white;
+            margin: auto;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            width: 55vw;
+        }
+
+        .prt1 {
+            padding: 15px;
+            line-height: 3vh;
+        }
+
+        @media screen and (max-width:1200px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .box {
+                font-size: 12px;
+            }
+
+            .omg a {
+                font-size: 16px;
+
+            }
+
+            .omg h2 {
+                font-size: 26px;
+            }
+
+            .omg h3 {
+                font-size: 18px;
+            }
+
+            .omg2 a {
+                font-size: 16px;
+            }
+
+            .omg2 h2 {
+                font-size: 26px;
+            }
+
+            .omg2 h3 {
+                font-size: 18px;
+            }
+
+            .omg {
+
+                position: relative;
+                top: 54px;
+            }
+
+            .omg2 {
+                position: relative;
+                top: 54px;
+            }
+
+            .botm {
+                grid-template-columns: 1fr 1fr;
+                width: 85vw;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="upr">
+        <nav>
+            <ul>
+                <img width="35px" height="35px" src="assests/razer-ths-logo (1).svg" alt="">
+                <li><a href="netflix clon/index.html">Pc</a></li>
+                <li><a href="second card/index.html">Support</a></li>
+                <img src="assests/searcu.svg">
+
+            </ul>
+        </nav>
+    </div>
+    <div class="sepration">
+    </div>
+    <section class="box">
+        <div>
+            <span>Mid-Year Gear Up: Discover our prime-time specials with next-day delivery and free shipping with
+                no minimum spend. Shop Now ></span>
+        </div>
+    </section>
+    <!-- first -->
+    <section class="first">
+        <div class="omg">
+            <!-- <img src="assests/razer-mid-year-gear-up-primeday-homepage-desktop2x.webp" alt=""> -->
+            <h2><span>MID-YEAR GEAR UP</h2></span>
+            <h3><span>PRIME-TIME SPECIALS</h3></span>
+            <a href="#">Shop Now</a>
+        </div>
+    </section>
+    <div class="sepration2">
+    </div>
+    <!-- second -->
+    <section class="second">
+        <div class="omg">
+            <!-- <img src="assests/razer-back-to-school-2024-homepage-desktop2x.webp" alt=""> -->
+            <h2><span>CONQUER YOUR CAMPUS</h2></span>
+            <h3><span>NEW BACK-TO-SCHOOL SPECIALS</h3></span>
+            <a href="?">Shop Now</a>
+        </div>
+    </section>
+    <div class="sepration2">
+
+    </div>
+    <!-- third -->
+    <section class="third">
+        <div class="omg">
+            <!-- <img src="assests/razer-blade-18-2024-homepage-desktop2x.webp" alt=""> -->
+            <h2><span>NEW RAZER BLADE 18</h2></span>
+            <h3><span>NEW 4K 200 HZ MODEL AVAILABLE</h3></span>
+            <span> <a href="/">Buy Now</span></a>
+        </div>
+    </section>
+    <div class="sepration2">
+
+    </div>
+
+    <section>
+        <div class="grid">
+            <div class="box1">
+                <div class="omg2">
+                    <h2><span>NEW RAZER BLADE 18</h2></span>
+                    <h3><span>NEW 4K 200 HZ MODEL AVAILABLE</h3></span>
+                    <span> <a href="/">Buy Now</span></a>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="omg2">
+                    <h2><span>NEW RAZER BLADE 18</h2></span>
+                    <h3><span>NEW 4K 200 HZ MODEL AVAILABLE</h3></span>
+                    <span> <a href="/">Buy Now</span></a>
+                </div>
+            </div>
+            <div class="box3">
+                <div class="omg2">
+                    <h2><span>NEW RAZER BLADE 18</h2></span>
+                    <h3><span>NEW 4K 200 HZ MODEL AVAILABLE</h3></span>
+                    <span> <a href="/">Buy Now</span></a>
+                </div>
+            </div>
+            <div class="box4">
+                <div class="omg2">
+                    <h2><span>NEW RAZER BLADE 18</h2></span>
+                    <h3><span>NEW 4K 200 HZ MODEL AVAILABLE</h3></span>
+                    <span> <a href="/">Buy Now</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- foooter start -->
+    <footer>
+        <div class="botm">
+            <div class="prt1">
+                <p>RazerStores</p>
+                <p>RazerCafe</p>
+                <p>Store Locator</p>
+                <p>Purchase Progr
+                <p>Bulk Order Prog
+                <p>Education</p>
+                <p>Only at Razer</p>
+                <p>RazerStore Rewards</p>
+                <p>Newsletter</p>
+            </div>
+            <div class="prt1">
+
+
+                <p>Chroma RGB
+                <p>Concepts
+                <p>Esports
+                <p>Collabs
+            </div>
+            <div class="prt1">
+                <p>Shop</p>
+                <p>RazerStores</p>
+                <p>RazerCafe</p>
+                <p>Store Locator</p>
+                <p>Purchase Programs</p>
+                <p>Bulk Order Program</p>
+                <p>Education</p>
+                <p>Only at Razer</p>
+                <p>RazerStore Rewards</p>
+                <p>Newsletter</p>
+            </div>
+            <div class="prt1">
+                <p>Shop</p>
+                <p>RazerStores</p>
+                <p>RazerCafe</p>
+                <p>Store Locator</p>
+                <p>Purchase Programs</p>
+                <p>Bulk Order Program</p>
+                <p>Education</p>
+                <p>Only at Razer</p>
+                <p>RazerStore Rewards</p>
+                <p>Newsletter</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+</body>
+
+</html>
