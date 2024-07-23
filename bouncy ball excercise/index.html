@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bounce ball</title>
+    <style>
+        .container {
+            background-color: rgb(121, 121, 209);
+            width: auto;
+            height: 50vh;
+            position: relative;
+
+        }
+                .ball {
+            align-items: end;
+            display: flex;
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            border-radius: 35px;
+            background-color: yellow;
+            position: absolute;
+            bottom: 0px;
+            animation: bounce 3s ease-in infinite;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0px);
+            }
+
+            10% {
+                transform: translateY(-124px) translateX(83px);
+            }
+
+            20% {
+                transform: translateY(0px) translateX(166px);
+            }
+
+            30% {
+                transform: translateY(-124px) translateX(245px);
+            }
+
+            40% {
+                transform: translateY(0px) translateX(345px);
+            }
+
+            50% {
+                transform: translateY(-124px) translateX(460px);
+            }
+
+            60% {
+                transform: translateY(0px) translateX(560px);
+            }
+
+            70% {
+                transform: translateY(-124px) translateX(660px);
+            }
+
+            80% {
+                transform: translateY(0px) translateX(760px);
+            }
+
+            90% {
+                transform: translateY(-124px) translateX(860px);
+            }
+
+            100% {
+                transform: translateY(0px) translateX(960px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="ball">
+
+        </div>
+    </div>
+</body>
+
+</html>
